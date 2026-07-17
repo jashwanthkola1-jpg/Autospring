@@ -1,2 +1,5 @@
-//alert("Welcome")
-console.log("Hi")
+index.js: 
+
+// alert("Hello guysss");
+
+console.log("hello from JS!")
