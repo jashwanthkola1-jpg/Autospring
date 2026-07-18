@@ -1,5 +1,5 @@
 body{
-    color:red;
+    color:rgb(249, 244, 244);
 
 }
 
@@ -17,7 +17,6 @@ h1 {
     padding: 20px;
     text-align: center;
 }
-
 .navbar a{
     padding: 20px;
     text-decoration: none;
@@ -25,8 +24,8 @@ h1 {
     font-size: 20px;
 }
 .navbar a:hover{
-    color:rgb(216, 10, 10);
-    background-color: rgb(20, 193, 32);
+    color:rgb(244, 243, 243);
+    background-color: rgb(239, 17, 187);
 }
 .card{
     border:1px solid rgb(0, 0, 0);
@@ -43,7 +42,6 @@ h1 {
     .card{
     animation: float 4s ease-in-out infinite;
 }
-
 @keyframes float{
     0%{
         transform:translateY(0);
