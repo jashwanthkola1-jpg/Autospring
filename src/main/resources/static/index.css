@@ -1,9 +1,13 @@
 body{
-    margin: 0px;
+    color:red;
+
 }
 
 h1 {
     color: red;
+    background:linear-gradient(90deg,#ff512f,#dd2476,#24c6dc);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .navbar{
@@ -22,7 +26,7 @@ h1 {
 }
 .navbar a:hover{
     color:rgb(216, 10, 10);
-    background-color: whitesmoke;
+    background-color: rgb(20, 193, 32);
 }
 .card{
     border:1px solid rgb(0, 0, 0);
@@ -34,15 +38,39 @@ h1 {
     overflow:hidden;    
     margin-top: 70px;
     padding-bottom: 20px;
+    transition:.4s;
     background-color: cornflowerblue;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    .card{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .card img{
-    width:50%;
+    width:100%;
 }
 .card button{
     border-style: none;
     padding: 10px;
     width: 80%;
     border-radius: 8px;
+}
+*{
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
 }

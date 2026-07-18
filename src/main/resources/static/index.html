@@ -1,4 +1,4 @@
-```<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,16 +15,15 @@
         <a href="">Autosuggest</a>
      </div>
      <div class="card">
-        <img src="john.png" alt="image not found">
-        <h3 id="user_name">John</h3>
-        <p>Male</p>
-        <button>Togglr User</button>
+        <img id="user-image" src="john.png" alt="image not found">
+        <h3 id="user-name">John Doe</h3>
+        <p id="user-gender">Male</p>
+
+        <button onclick="toggleUser()" >Toggle User</button>
         <br>
         <br>
-        <button>Random User</button>
+        <button onclick="randomUser()"> Random User</button>
      </div>
-
-
     <script src="index.js"></script>
 </body>
-</html>```
+</html>
