@@ -24,15 +24,6 @@ h1 {
     color: black;
     font-size: 20px;
 }
-document.addEventListener("mousemove",(e)=>{
-
-const r=Math.floor(e.clientX/window.innerWidth*255);
-const g=Math.floor(e.clientY/window.innerHeight*255);
-const b=255-r;
-
-document.body.style.background=`rgb(${r},${g},${b})`;
-
-});
 .navbar a:hover{
     color:rgb(216, 10, 10);
     background-color: rgb(20, 193, 32);
